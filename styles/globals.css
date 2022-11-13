@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 html,
 body {
   padding: 0;
@@ -13,6 +14,7 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +23,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: #151515;
   }
 }
