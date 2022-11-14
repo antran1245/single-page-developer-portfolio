@@ -14,3 +14,8 @@ Provide images, Figma design, and text for the website.
 **Run**
 
 `npm run dev`
+
+### FrontEnd
+- HTML
+- CSS
+- JavaScript

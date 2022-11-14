@@ -1,0 +1,25 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 140px 0 80px 0;
+}
+.heading h1 {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    margin: 0;
+}
+.heading a {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4EE1A0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

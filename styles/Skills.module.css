@@ -5,12 +5,11 @@
     flex-wrap: wrap;
     border-top: 1px solid #FFFFFF;
     margin-top: 104px;
-    padding-top: 72px;
 }
 
 .skills .box {
     width: 345px;
-    margin-bottom: 58px;
+    margin-top: 58px;
 }
 
 .box h2 {

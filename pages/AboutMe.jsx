@@ -26,7 +26,7 @@ export default function AboutMe() {
                 <h2>Nice to meet you! I'm <span>Adam Keyes</span>.</h2>
                 <p>Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
                 <div className={styles.circle}>
-                    <a href='#'>Contact Me</a>
+                    <a href='#'>CONTACT ME</a>
                     <Image src={circle} alt="circle"/>
                 </div>
             </div>

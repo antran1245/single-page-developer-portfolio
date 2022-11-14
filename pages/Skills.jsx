@@ -2,7 +2,7 @@ import styles from '../styles/Skills.module.css'
 
 export default function Skills() {
     return(
-        <div className={styles.skills}>
+        <section className={styles.skills}>
             <div className={styles.box}>
                 <h2>HTML</h2>
                 <p>4 Years Experience</p>
@@ -27,6 +27,6 @@ export default function Skills() {
                 <h2>Sass</h2>
                 <p>3 Years Experience</p>
             </div>
-        </div>
+        </section>
     )
 }
