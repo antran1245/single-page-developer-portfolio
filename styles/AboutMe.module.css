@@ -1,0 +1,79 @@
+/* rings next to the "Nice" */
+.rings {
+    position: absolute;
+    top: 12%;
+    left: -2%;
+}
+
+/* Icons and logo at the top of the page */
+.heading {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.heading .link {
+    width: 192px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+/* About me and profile pic */
+.aboutMe {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+/* About me section */
+.text {
+    width: 800px;
+    height: 303px;
+}
+.text h2 {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+}
+.text h2 span {
+    text-decoration: underline;
+    text-decoration-color: #4EE1A0;
+}
+.text p {
+    width: 50%;
+    font-weight: 500;
+}
+/* Row for the contact me and circle */
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.circle a {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4EE1A0;
+}
+.circle a:hover {
+    color: #4EE1A0;
+}
+.circle img {
+    margin-right: 30px;
+}
+/* profile pic */
+.profile {
+    background: url('../assets/images/image-profile-desktop.webp') center center no-repeat;
+    background-size: cover;
+    height: 720px;
+    width: 550px;
+    margin-top: -95px;
+    margin-left: -100px;
+    z-index: -1;
+}
