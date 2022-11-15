@@ -10,28 +10,28 @@ import styles from '../styles/AboutMe.module.css'
 
 export default function AboutMe() {
     return(
-        <React.Fragment>
-        <Image src={rings} alt="rings" className={styles.rings}/>
-        <div className={styles.heading}>
-            <p>adamkeyes</p>
-            <div className={styles.link}>
-                <Image src={frontend} alt="frontend"/>
-                <Image src={github} alt="github"/>
-                <Image src={linkedin} alt="linkedin"/>
-                <Image src={twitter} alt="twitter"/>
-            </div>
-        </div>
-        <main className={styles.aboutMe}>
-            <div className={styles.text}>
-                <h2>Nice to meet you! I'm <span>Adam Keyes</span>.</h2>
-                <p>Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
-                <div className={styles.circle}>
-                    <a href='#'>CONTACT ME</a>
-                    <Image src={circle} alt="circle"/>
+        <section>
+            <Image src={rings} alt="rings" className={styles.rings}/>
+            <div className={styles.heading}>
+                <p>adamkeyes</p>
+                <div className={styles.link}>
+                    <Image src={frontend} alt="frontend"/>
+                    <Image src={github} alt="github"/>
+                    <Image src={linkedin} alt="linkedin"/>
+                    <Image src={twitter} alt="twitter"/>
                 </div>
             </div>
-            <div className={styles.profile}></div>
-        </main>
-        </React.Fragment>
+            <main className={styles.aboutMe}>
+                <div className={styles.text}>
+                    <h2>Nice to meet you! I'm <span>Adam Keyes</span>.</h2>
+                    <p>Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
+                    <div className={styles.circle}>
+                        <a href='#'>CONTACT ME</a>
+                        <Image src={circle} alt="circle"/>
+                    </div>
+                </div>
+                <div className={styles.profile}></div>
+            </main>
+        </section>
     )
 }

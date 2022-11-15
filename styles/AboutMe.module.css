@@ -22,7 +22,10 @@
     justify-content: space-between;
     margin-right: 30px;
 }
-
+.link img:hover {
+    cursor: pointer;
+    filter: invert(35%) sepia(57%) saturate(461%) hue-rotate(89deg) brightness(92%) contrast(90%);
+}
 /* About me and profile pic */
 .aboutMe {
     position: relative;
@@ -76,4 +79,14 @@
     margin-top: -95px;
     margin-left: -100px;
     z-index: -1;
+}
+
+@media only screen and (max-width: 1280px) {
+    .rings {
+        top: 8%;
+        left: -25%;
+    }
+    .aboutMe .text {
+        width: 100%;
+    }
 }

@@ -14,7 +14,7 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', normal;
 }
 
 @media (prefers-color-scheme: dark) {

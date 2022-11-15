@@ -1,0 +1,131 @@
+.contact {
+    background-color: #242424;
+    width: 100vw !important;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.contact main {
+    width: 1200px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.col {
+    width: 40%;
+}
+
+.row:nth-child(1) {
+    height: 327px;
+    margin-top: 84px;
+}
+.row:nth-child(2) {
+    margin-top: 92px;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 47px;
+    padding-bottom: 92px;
+}
+
+/* Contact text */
+.col h1 {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    margin: 0 0 36px 0;
+}
+.col p {
+    width: 445px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.col img {
+    position: absolute;
+    left: -150px;
+}
+/* Form */
+.row form {
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+}
+.row form textarea, .row form input {
+    margin-bottom: 32px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.22px;
+}
+.row form textarea:focus, .row form input:focus {
+    outline: none;
+    border-bottom: 1px solid #4EE1A0;
+}
+
+.row form textarea {
+    resize: none;
+}
+.row form a {
+    align-self: flex-end;
+    border-bottom: 2px solid #4EE1A0;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+}
+.row form a:hover {
+    color: #4EE1A0;
+}
+
+/* links bar */
+.row:nth-child(2) p {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+    margin: 0;
+    cursor: pointer;
+}
+.link {
+    width: 192px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+.link img:hover {
+    cursor: pointer;
+    filter: invert(35%) sepia(57%) saturate(461%) hue-rotate(89deg) brightness(92%) contrast(90%);
+}
+
+@media only screen and (max-width: 1280px) {
+    .contact main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col:nth-child(1) {
+        width: 445px;
+        text-align: center;
+    }
+    .row:nth-child(1) {
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .col img {
+        bottom: 200px;
+        left: -350px;
+    }
+    .row:nth-child(2) {
+        width: 90%;
+    }
+    .link {
+        margin-right: 0;
+    }
+}
