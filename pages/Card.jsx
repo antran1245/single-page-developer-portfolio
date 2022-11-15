@@ -9,7 +9,12 @@ export default function Card({image, title, languages}) {
             <div className={styles.image} onMouseEnter={() => onHover(true)} onMouseLeave={() => onHover(false)}>
                 <Image src={image} alt={image}/>
                 {hover?
-                <div className={styles.overlay}>hi</div> : null
+                    <div className={styles.overlay}>
+                        <div className={styles.overlayBox}>
+                            <a href="#">VIEW PROJECT</a>
+                            <a href="#">VIEW CODE</a>
+                        </div>
+                    </div> : null
                 }
             </div>
             <p className={styles.title}>{title}</p>

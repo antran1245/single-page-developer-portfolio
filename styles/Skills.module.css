@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     border-top: 1px solid #FFFFFF;
     margin-top: 104px;
+    position: relative;
 }
 
 .skills .box {
@@ -23,4 +24,10 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
+}
+
+.rings {
+    position: absolute;
+    bottom: -50px;
+    right: -500px;
 }

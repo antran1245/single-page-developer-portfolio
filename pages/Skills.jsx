@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import rings from '../assets/images/pattern-rings.svg'
 import styles from '../styles/Skills.module.css'
 
 export default function Skills() {
@@ -27,6 +29,7 @@ export default function Skills() {
                 <h2>Sass</h2>
                 <p>3 Years Experience</p>
             </div>
+            <Image src={rings} alt="rings" className={styles.rings}/>
         </section>
     )
 }

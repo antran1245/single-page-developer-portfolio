@@ -25,5 +25,6 @@ a {
     color: white;
     font-weight: 700;
     background: #151515;
+    overflow-x: hidden;
   }
 }
