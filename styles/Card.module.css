@@ -59,3 +59,13 @@
     margin-right: 18px;
     margin-top: 7px;
 }
+
+@media only screen and (max-width: 1280px) {
+    .card {
+        width: 342px;
+        height: 398px;
+    }
+    .card img {
+        height: 253px;
+    }
+}
