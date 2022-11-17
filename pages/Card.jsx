@@ -19,7 +19,7 @@ export default function Card({image, title, languages}) {
             </div>
             <p className={styles.title}>{title}</p>
             <p className={styles.languagesBox}>
-                {language.length > 0 ?languages.map((item, index) => {
+                {languages.length > 0 ?languages.map((item, index) => {
                     return <span key={index} className={styles.languages}>{item}</span>
                 }) : null}
             </p>
