@@ -81,6 +81,7 @@
     z-index: -1;
 }
 
+/* Tablet */
 @media only screen and (max-width: 1280px) {
     .rings {
         top: 8%;
@@ -102,7 +103,6 @@
     }
     .circle {
         align-items: flex-end;
-        margin-top: 34px;
     }
     .circle img {
         clip: rect(0, 60px, 200px, 0);
@@ -115,6 +115,57 @@
         letter-spacing: -2.05px;
     }
     .profile {
+        background: url('../assets/images/image-profile-tablet.webp') center center no-repeat;
+        background-size: cover;
         margin-left: -60px;
+        height: 600px;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 768px) {
+    .rings {
+        left: -80%;
+        top: 20%;
+    }
+    .heading {
+        flex-direction: column;
+        padding: 0;
+    }
+    .aboutMe {
+        flex-direction: column-reverse;
+    }
+    .aboutMe .text {
+        width: 100%;
+        padding-left: 0%;
+    }
+    .text h2 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.14px;
+        text-align: center;
+    }
+    .text p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .circle {
+        justify-content: center;
+    }
+    .circle img {
+        position: absolute;
+        top: 30%;
+    }
+    .profile {
+        background: url('../assets/images/image-profile-mobile.webp') center center no-repeat;
+        background-size: contain;
+        width: 70%;
+        margin-left: 0;
+        align-self: center;
+        height: 383px;
+        z-index: 0;
     }
 }

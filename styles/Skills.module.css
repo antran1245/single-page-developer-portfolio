@@ -8,6 +8,9 @@
 .line {
     margin-top: 104px;
 }
+.line:nth-of-type(2) {
+    display: none;
+}
 /* languages */
 .skills .box {
     width: 345px;
@@ -33,6 +36,7 @@
     right: -500px;
 }
 
+/* Tablet */
 @media only screen and (max-width: 1280px) {
     .skills {
         justify-content: center;
@@ -47,5 +51,39 @@
         right: -230px;
         bottom: 0;
         clip: rect(0, 300px, 200px, 0);
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 768px) {
+    .skills {
+        padding-bottom: 0;
+    }
+    .skills .box {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .box h2 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1px;
+    }
+    .box p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .line {
+        margin-top: 80px;
+    }
+    .line:nth-of-type(2) {
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .rings {
+        bottom: -100px;
+        right: -330px;
+        clip: rect(0, 200px, 200px, 0);
     }
 }

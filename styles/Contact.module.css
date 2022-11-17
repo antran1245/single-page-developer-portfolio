@@ -102,6 +102,7 @@
     filter: invert(35%) sepia(57%) saturate(461%) hue-rotate(89deg) brightness(92%) contrast(90%);
 }
 
+/* Tablet */
 @media only screen and (max-width: 1280px) {
     .contact main {
         display: flex;
@@ -127,5 +128,32 @@
     }
     .link {
         margin-right: 0;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 768px) {
+    .contact main {
+        width: 100%;
+    }
+    .row, .col:nth-child(1), .col p {
+        width: 100%;
+    }
+    .col h1 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.14px;
+    }
+    .col p {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0 30px;
+    }
+    .row form {
+        margin-top: 50px;
+        width: 90vw;
+    }
+    .col img {
+        bottom: 275px;
     }
 }

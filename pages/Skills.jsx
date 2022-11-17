@@ -33,6 +33,7 @@ export default function Skills() {
                 </div>
                 <Image src={rings} alt="rings" className={styles.rings}/>
             </div>
+            <hr className={styles.line}/>
         </section>
     )
 }

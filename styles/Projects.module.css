@@ -27,11 +27,26 @@
     flex-wrap: wrap;
 }
 
+/* Tablet */
 @media only screen and (max-width: 1280px) {
     .projects {
         width: 90% !important;
     }
     .heading {
         margin-top: 0;
+    }
+    .heading h1 {
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -2.05px;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 768px) {
+    .heading h1 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.14px;
     }
 }
