@@ -18,10 +18,14 @@ export default function Card({image, title, languages}) {
                 }
             </div>
             <p className={styles.title}>{title}</p>
-            <p>
+            <p className={styles.languagesBox}>
                 {languages.map((item, index) => {
                     return <span key={index} className={styles.languages}>{item}</span>
                 })}
+            </p>
+            <p className={styles.links}>
+                <a href="#">VIEW PROJECT</a>
+                <a href="#">VIEW CODE</a>
             </p>
         </div>
     )

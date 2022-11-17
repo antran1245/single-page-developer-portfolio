@@ -46,6 +46,9 @@
 .card p {
     margin: 0;
 }
+.card .languagesBox {
+    margin-top: 7px;
+}
 .card .title {
     font-size: 24px;
     line-height: 32px;
@@ -59,6 +62,9 @@
     margin-right: 18px;
     margin-top: 7px;
 }
+.links {
+    display: none;
+}
 
 @media only screen and (max-width: 1280px) {
     .card {
@@ -67,5 +73,30 @@
     }
     .card img {
         height: 253px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .card {
+        min-width: 342px;
+        width: 45%;
+        margin-bottom: 60px;
+    }
+    .card .image .overlay {
+        display: none;
+    }
+    .card .links {
+        display: flex;
+        margin-top: 20px;
+    }
+    .links a {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 2.29px;
+        padding-bottom: 10px;
+        margin-right: 30px;
+        border-bottom: 2px solid #4EE1A0;
+    }
+    .links a:hover {
+        color: #4EE1A0;
     }
 }

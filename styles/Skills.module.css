@@ -96,8 +96,7 @@
         left: 64%;
     }
 }
-/* Phone */
-@media only screen and (max-width: 576px) and (orientation: portrait){
+@media only screen and (max-width: 768px) and (orientation: portrait){
     .skills {
         padding-bottom: 0;
         justify-content: center;
@@ -126,6 +125,11 @@
     }
     .rings {
         bottom: -100px;
+    }
+}
+/* Phone */
+@media only screen and (max-width: 576px) and (orientation: portrait){
+    .rings {
         left: 51%;
         clip: rect(0, 200px, 200px, 0);
     }

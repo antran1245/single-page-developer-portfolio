@@ -42,8 +42,14 @@
     }
 }
 
+@media only screen and (max-width: 768px) and (orientation: portrait){
+    .content {
+        justify-content: center;
+    }
+}
+
 /* Phone */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) and (orientation: portrait){
     .heading h1 {
         font-size: 40px;
         line-height: 40px;
