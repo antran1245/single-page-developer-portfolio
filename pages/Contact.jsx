@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useState } from 'react'
 import frontend from '../assets/images/icon-frontend-mentor.svg'
 import github from '../assets/images/icon-github.svg'
 import linkedin from '../assets/images/icon-linkedin.svg'
@@ -7,6 +8,19 @@ import rings from '../assets/images/pattern-rings.svg'
 import styles from '../styles/Contact.module.css'
 
 export default function Contact() {
+    const [errors, setErrors] = useState({name: false, email: false, message: false})
+    const [form, setForm] = useState({name: '', email: '', message: ''})
+
+    const formSubmitted = async(e) => {
+        e.preventDefault()
+        await setErrors({name: form.name === '', email: form.email === '', message: form.message === ''})
+        if(!(/^\w+([\.+]?\w+)*@\w+([\.-|+|]?\w+)*(\.\w{2,3})+$/.test(form.email))) {
+            setErrors({...errors, email: true})
+        }
+        if(form.name !== '' && form.email !== '' &&  form.message !== '') {
+            alert('This is not a real Portfolio')
+        }
+    }
     return(
         <section id='contact' className={styles.contact}>
             <main>
@@ -17,10 +31,28 @@ export default function Contact() {
                         <Image src={rings} alt="rings"/>
                     </div>
                     <form className={styles.col}>
-                        <input type="text" placeholder="NAME"/>
-                        <input type="email" placeholder="EMAIL"/>
-                        <textarea placeholder='MESSAGE' rows={4}></textarea>
-                        <a href='#'>SEND MESSAGE</a>
+                        <div className={styles.formGroup}>
+                            <div className={styles.inputGroup}>
+                                <input type="text" placeholder="NAME" value={form.name} onChange={(e) => setForm({...form, name: e.target.value})}/>
+                                {errors.name ? <span className={styles.errorCircle}>&#33;</span> : null }
+                            </div>
+                            {errors.name ? <p className={styles.error}>Cannot be blank</p> : null }
+                        </div>
+                        <div className={styles.formGroup}>
+                            <div className={styles.inputGroup}>
+                                <input type="email" placeholder="EMAIL" value={form.email} onChange={(e) => setForm({...form, email: e.target.value})}/>
+                                {errors.email ? <span className={styles.errorCircle}>&#33;</span> : null }
+                            </div>
+                            {errors.email ? <p className={styles.error}>Sorry, invalid format here</p> : null }
+                        </div>
+                        <div className={styles.formGroup}>
+                            <div className={styles.inputGroup}>
+                                <textarea placeholder='MESSAGE' rows={4} value={form.message} onChange={(e) => setForm({...form, message: e.target.value})}></textarea>
+                                {errors.message ? <span className={styles.errorCircle}>&#33;</span> : null }
+                            </div>
+                            {errors.message ? <p className={styles.error}>Cannot be blank</p> : null }
+                        </div>
+                        <a onClick={formSubmitted}>SEND MESSAGE</a>
                     </form>
                 </div>
                 <div className={styles.row}>

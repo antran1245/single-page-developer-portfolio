@@ -51,10 +51,9 @@
     width: 445px;
 }
 .row form textarea, .row form input {
-    margin-bottom: 32px;
+    width: 100%;
     border: none;
     background-color: transparent;
-    border-bottom: 1px solid #FFFFFF;
     padding-bottom: 16px;
     padding-left: 24px;
     font-size: 16px;
@@ -64,12 +63,44 @@
 }
 .row form textarea:focus, .row form input:focus {
     outline: none;
-    border-bottom: 1px solid #4EE1A0;
 }
-
 .row form textarea {
     resize: none;
 }
+.formGroup {
+    margin-bottom: 32px;
+}
+.inputGroup {
+    /* position: relative; */
+    display: flex;
+    border-bottom: 1px solid #FFFFFF;
+}
+.inputGroup:focus-within {
+    border-bottom: 1px solid #4EE1A0;
+}
+/* Error */
+.error {
+    color: #FF6F5B;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.17px;
+    margin-top: 0;
+    text-align: end;
+}
+.errorCircle {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF6F5B;
+    border-radius: 50%;
+    color: #FF6F5B;
+    /* position: absolute;
+    right: 10px;
+    top: 0; */
+}
+/* Send button */
 .row form a {
     align-self: flex-end;
     border-bottom: 2px solid #4EE1A0;
@@ -77,11 +108,11 @@
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 2.29px;
+    margin-top: 32px;
 }
 .row form a:hover {
     color: #4EE1A0;
 }
-
 /* links bar */
 .row:nth-child(2) p {
     font-size: 32px;
