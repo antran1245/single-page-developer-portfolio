@@ -72,12 +72,16 @@
     }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1080px) and (orientation: landscape){
+    .rings {
+        left: 75%;
+    }
+}
+@media only screen and (max-width: 992px) and (orientation: portrait){
     .rings {
         left: 64%;
     }
 }
-
 /* Phone */
 @media only screen and (max-width: 576px) {
     .skills {
