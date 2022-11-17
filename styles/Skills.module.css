@@ -34,11 +34,12 @@
 .rings {
     position: absolute;
     bottom: -50px;
-    right: -700px;
+    left: 68vw;
 }
 
 @media only screen and (max-width: 1600px){
     .rings {
+        left: 100%;
         right: -500px;
     }
 }
@@ -77,13 +78,26 @@
         left: 75%;
     }
 }
+/* For Phone portrait only */
 @media only screen and (max-width: 992px) and (orientation: portrait){
+    .rings {
+        left: 69%;
+        right: 0px;
+    }
+}
+/* For Phone landscape only */
+@media only screen and (max-width: 992px) and (orientation: landscape){
+    .rings {
+        left: 69%;
+    }
+}
+@media only screen and (max-width: 812px){
     .rings {
         left: 64%;
     }
 }
 /* Phone */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) and (orientation: portrait){
     .skills {
         padding-bottom: 0;
         justify-content: center;
@@ -112,7 +126,12 @@
     }
     .rings {
         bottom: -100px;
-        left: 50%;
+        left: 51%;
         clip: rect(0, 200px, 200px, 0);
+    }
+}
+@media only screen and (max-width: 400px) and (orientation: portrait){
+    .rings {
+        left: 47%;
     }
 }
