@@ -63,6 +63,7 @@
     letter-spacing: 2.29px;
     padding-bottom: 10px;
     border-bottom: 2px solid #4EE1A0;
+    cursor: pointer;
 }
 .circle a:hover {
     color: #4EE1A0;

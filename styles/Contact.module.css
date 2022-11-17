@@ -17,7 +17,8 @@
 }
 
 .row:nth-child(1) {
-    height: 327px;
+    min-height: 327px;
+    height: auto;
     margin-top: 84px;
 }
 .row:nth-child(2) {
@@ -84,7 +85,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: -0.17px;
-    margin-top: 0;
+    margin: 0;
     text-align: end;
 }
 .errorCircle {
@@ -109,6 +110,7 @@
     line-height: 26px;
     letter-spacing: 2.29px;
     margin-top: 32px;
+    cursor: pointer;
 }
 .row form a:hover {
     color: #4EE1A0;

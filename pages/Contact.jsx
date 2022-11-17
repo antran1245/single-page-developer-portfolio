@@ -15,7 +15,7 @@ export default function Contact() {
         e.preventDefault()
         await setErrors({name: form.name === '', email: form.email === '', message: form.message === ''})
         if(!(/^\w+([\.+]?\w+)*@\w+([\.-|+|]?\w+)*(\.\w{2,3})+$/.test(form.email))) {
-            setErrors({...errors, email: true})
+            setErrors({name: form.name === '', email: true, message: form.message === ''})
         }
         if(form.name !== '' && form.email !== '' &&  form.message !== '') {
             alert('This is not a real Portfolio')
