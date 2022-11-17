@@ -1,9 +1,9 @@
 /* skills */
 .skills {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
+    width: 90%;
 }
 .line {
     margin-top: 104px;
@@ -13,8 +13,9 @@
 }
 /* languages */
 .skills .box {
-    width: 345px;
+    width: 30%;
     margin-top: 58px;
+    margin-right: 35px;
 }
 
 .box h2 {
@@ -33,31 +34,55 @@
 .rings {
     position: absolute;
     bottom: -50px;
-    right: -500px;
+    right: -700px;
 }
 
+@media only screen and (max-width: 1600px){
+    .rings {
+        right: -500px;
+    }
+}
+
+
+/* Clip off rings on right side when on tablet and phone */
+@media only screen and ((orientation: portrait) or (orientation: landscape)) {
+    .rings{
+        clip: rect(0, 300px, 129px, 0);
+    }
+}
 /* Tablet */
 @media only screen and (max-width: 1280px) {
     .skills {
-        justify-content: center;
+        margin: 0 auto;
         padding-bottom: 100px;
         margin-top: 0;
+        width: 90%;
+    }
+    .skills .box {
+        width: 45%;
     }
     .line {
         width: 90%;
     }
     .rings {
         position: absolute;
-        right: -230px;
-        bottom: 0;
-        clip: rect(0, 300px, 200px, 0);
+        left: 79%;
+        bottom: 50px;
+        /* clip: rect(0, 300px, 129px, 0); */
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .rings {
+        left: 64%;
     }
 }
 
 /* Phone */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
     .skills {
         padding-bottom: 0;
+        justify-content: center;
     }
     .skills .box {
         text-align: center;
@@ -83,7 +108,7 @@
     }
     .rings {
         bottom: -100px;
-        right: -330px;
+        left: 50%;
         clip: rect(0, 200px, 200px, 0);
     }
 }
