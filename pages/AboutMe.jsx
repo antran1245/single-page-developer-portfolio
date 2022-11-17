@@ -9,6 +9,9 @@ import rings from '../assets/images/pattern-rings.svg'
 import styles from '../styles/AboutMe.module.css'
 
 export default function AboutMe() {
+    const scrollToContact = () => {
+        document.getElementById('contact').scrollIntoView({behavior: 'smooth'})
+    }
     return(
         <section>
             <Image src={rings} alt="rings" className={styles.rings}/>
@@ -26,7 +29,7 @@ export default function AboutMe() {
                     <h2>Nice to meet you! I'm <span>Adam Keyes</span>.</h2>
                     <p>Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
                     <div className={styles.circle}>
-                        <a href='#'>CONTACT ME</a>
+                        <a onClick={scrollToContact}>CONTACT ME</a>
                         <Image src={circle} alt="circle"/>
                     </div>
                 </div>

@@ -2,11 +2,14 @@ import Card from './Card'
 import styles from '../styles/Projects.module.css'
 
 export default function Projects() {
+    const scrollToContact = () => {
+        document.getElementById('contact').scrollIntoView({behavior: 'smooth'})
+    }
     return(
         <section className={styles.projects}>
             <header className={styles.heading}>
                 <h1>Projects</h1>
-                <a href="#">CONTACT ME</a>
+                <a onClick={scrollToContact}>CONTACT ME</a>
             </header>
             <main className={styles.content}>
                 <Card image={require('../assets/images/thumbnail-project-1-small.webp')} title="DESIGN PORTFOLIO" languages={['HTML', 'CSS']}/>
