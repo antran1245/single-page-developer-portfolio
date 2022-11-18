@@ -27,15 +27,15 @@ Next.js ia a framework created by Vercel.
 <div style="display: flex">
     <div style="margin-right: 20px">
         <p><b>Desktop</b></p>
-        <img src="./screenshots/desktop.png" alt="desktop full view" width="200">
+        <img src="./screenshots/desktop.png" alt="desktop full view" width="300">
     </div>
     <div style="margin-right: 20px">
         <p><b>Tablet</b></p>
-        <img src="./screenshots/tablet.png" alt="tablet full view" width="200">
+        <img src="./screenshots/tablet.png" alt="tablet full view" width="400">
     </div>
     <div style="margin-right: 20px">
         <p><b>Phone</b></p>
-        <img src="./screenshots/phone.png" alt="phone full view" width="200">
+        <img src="./screenshots/phone.png" alt="phone full view" width="400">
     </div>
 </div>
 
