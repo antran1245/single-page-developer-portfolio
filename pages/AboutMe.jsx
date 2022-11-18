@@ -8,11 +8,11 @@ export default function AboutMe() {
     }
     return(
         <section>
-            <Image src={'/assets/images/pattern-rings.svg'} alt="rings" className={styles.rings} width={530} height={129}/>
+            <Image src={'/assets/images/pattern-rings.svg'} alt="rings" className={styles.rings} width={530} height={129} loading={'eager'}/>
             <div className={styles.heading}>
                 <p>adamkeyes</p>
                 <div className={styles.link}>
-                    <Image src={'/assets/images/icon-frontend-mentor.svg'} alt="frontend" width="26" height="23"></Image>
+                    <Image src={'/assets/images/icon-frontend-mentor.svg'} alt="frontend" width="26" height="23"/>
                     <Image src={'/assets/images/icon-github.svg'} alt="github" width="25" height="24"/>
                     <Image src={'/assets/images/icon-linkedin.svg'} alt="linkedin" width="25" height="24"/>
                     <Image src={'/assets/images/icon-twitter.svg'} alt="twitter" width="24" height="20"/>
