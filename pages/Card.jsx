@@ -10,7 +10,7 @@ export default function Card({image, title, languages}) {
     }, [languages])
     return(
         <div className={styles.card}>
-            <div className={styles.image} onMouseEnter={() => onHover(true)} onMouseLeave={() => onHover(false)}>
+            <div className={styles.image} onMouseEnter={() => onHover(true)} onMouseLeave={() => onHover(false)} role="img" aria-label='project image'>
                 <Image src={image} alt={image} width="686" height="506"/>
                 {hover?
                     <div className={styles.overlay}>
