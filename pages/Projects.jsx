@@ -6,7 +6,7 @@ export default function Projects() {
         document.getElementById('contact').scrollIntoView({behavior: 'smooth'})
     }
     return(
-        <section role={'ProjectSection'} className={styles.projects}>
+        <section className={styles.projects}>
             <header className={styles.heading}>
                 <h1>Projects</h1>
                 <a onClick={scrollToContact}>CONTACT ME</a>

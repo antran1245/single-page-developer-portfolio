@@ -3,7 +3,7 @@ import styles from '../styles/Skills.module.css'
 
 export default function Skills() {
     return(
-        <section role={'SkillsSection'}>
+        <section>
             <hr className={styles.line}/>
             <div className={styles.skills}>
                 <div className={styles.box}>

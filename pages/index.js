@@ -11,10 +11,10 @@ export default function Home() {
       <Head>
         <title>Adam Keyes&#39; Portfolio</title>
       </Head>
-      <AboutMe/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
+      <AboutMe role="AboutMe"/>
+      <Skills role="Skills"/>
+      <Projects role="Projects"/>
+      <Contact role="Contact"/>
     </div>
   )
 }

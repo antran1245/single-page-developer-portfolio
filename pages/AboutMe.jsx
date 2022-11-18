@@ -7,7 +7,7 @@ export default function AboutMe() {
         document.getElementById('contact').scrollIntoView({behavior: 'smooth'})
     }
     return(
-        <section role={'AboutMeSection'}>
+        <section>
             <Image src={'/assets/images/pattern-rings.svg'} alt="rings" className={styles.rings} width={530} height={129}/>
             <div className={styles.heading}>
                 <p>adamkeyes</p>

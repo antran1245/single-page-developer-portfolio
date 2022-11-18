@@ -17,7 +17,7 @@ export default function Contact() {
         }
     }
     return(
-        <section role={'ContactSection'} id='contact' className={styles.contact}>
+        <section id='contact' className={styles.contact}>
             <div>
                 <div className={styles.row}>
                     <div className={styles.col}>
