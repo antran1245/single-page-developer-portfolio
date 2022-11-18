@@ -1,11 +1,6 @@
 import Image from 'next/image'
 import { useState } from 'react'
-import frontend from '../assets/images/icon-frontend-mentor.svg'
-import github from '../assets/images/icon-github.svg'
-import linkedin from '../assets/images/icon-linkedin.svg'
-import twitter from '../assets/images/icon-twitter.svg'
-import rings from '../assets/images/pattern-rings.svg'
-import styles from '../styles/Contact.module.css'
+import styles from '/styles/Contact.module.css'
 
 export default function Contact() {
     const [errors, setErrors] = useState({name: false, email: false, message: false})
@@ -22,13 +17,13 @@ export default function Contact() {
         }
     }
     return(
-        <section id='contact' className={styles.contact}>
+        <section role={'ContactSection'} id='contact' className={styles.contact}>
             <div>
                 <div className={styles.row}>
                     <div className={styles.col}>
                         <h1>Contact</h1>
                         <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
-                        <Image src={rings} alt="rings"/>
+                        <Image src={'/assets/images/pattern-rings.svg'} alt="rings" width={530} height={129}/>
                     </div>
                     <form className={styles.col}>
                         <div className={styles.formGroup}>
@@ -58,10 +53,10 @@ export default function Contact() {
                 <div className={styles.row}>
                     <p>adamkeyes</p>
                     <div className={styles.link}>
-                        <Image src={frontend} alt="frontend"/>
-                        <Image src={github} alt="github"/>
-                        <Image src={linkedin} alt="linkedin"/>
-                        <Image src={twitter} alt="twitter"/>
+                        <Image src={'/assets/images/icon-frontend-mentor.svg'} alt="frontend" width="26" height="23"/>
+                        <Image src={'/assets/images/icon-github.svg'} alt="github" width="25" height="24"/>
+                        <Image src={'/assets/images/icon-linkedin.svg'} alt="linkedin" width="25" height="24"/>
+                        <Image src={'/assets/images/icon-twitter.svg'} alt="twitter" width="24" height="20"/>
                     </div>
                 </div>
             </div>

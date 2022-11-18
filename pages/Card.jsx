@@ -11,7 +11,7 @@ export default function Card({image, title, languages}) {
     return(
         <div className={styles.card}>
             <div className={styles.image} onMouseEnter={() => onHover(true)} onMouseLeave={() => onHover(false)}>
-                <Image src={image} alt={image}/>
+                <Image src={image} alt={image} width="686" height="506"/>
                 {hover?
                     <div className={styles.overlay}>
                         <div className={styles.overlayBox}>

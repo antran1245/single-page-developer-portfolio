@@ -1,10 +1,9 @@
 import Image from 'next/image'
-import rings from '../assets/images/pattern-rings.svg'
 import styles from '../styles/Skills.module.css'
 
 export default function Skills() {
     return(
-        <section>
+        <section role={'SkillsSection'}>
             <hr className={styles.line}/>
             <div className={styles.skills}>
                 <div className={styles.box}>
@@ -31,7 +30,7 @@ export default function Skills() {
                     <h2>Sass</h2>
                     <p>3 Years Experience</p>
                 </div>
-                <Image src={rings} alt="rings" className={styles.rings}/>
+                <Image src={'/assets/images/pattern-rings.svg'} alt="rings" className={styles.rings} width={530} height={129}/>
             </div>
             <hr className={styles.line}/>
         </section>

@@ -73,7 +73,7 @@
 }
 /* profile pic */
 .profile {
-    background: url('../assets/images/image-profile-desktop.webp') center center no-repeat;
+    background: url('/assets/images/image-profile-desktop.webp') center center no-repeat;
     background-size: cover;
     height: 720px;
     width: 550px;
@@ -116,7 +116,7 @@
         letter-spacing: -2.05px;
     }
     .profile {
-        background: url('../assets/images/image-profile-tablet.webp') center center no-repeat;
+        background: url('/assets/images/image-profile-tablet.webp') center center no-repeat;
         background-size: cover;
         margin-left: -60px;
         height: 600px;
@@ -168,7 +168,7 @@
         top: 30%;
     }
     .profile {
-        background: url('../assets/images/image-profile-mobile.webp') center center no-repeat;
+        background: url('/assets/images/image-profile-mobile.webp') center center no-repeat;
         background-size: contain;
         width: 70%;
         margin-left: 0;
