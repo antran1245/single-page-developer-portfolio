@@ -1,12 +1,16 @@
 # Objective 
 
-Create a developer profile for Adam Keyes.
+Create a developer profile for Adam Keyes. A project provided for learning and practicing web development.
 
 Project provided by [FrontEnd Mentor](https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x).
 
 **FrontEnd Mentor**
 
 Provide images, Figma design, and text for the website.
+
+**Live Link**
+
+[Portfolio for Adam Keyes](https://single-page-developer-portfolio-d877.vercel.app/)
 
 ## Technology
 
@@ -16,6 +20,10 @@ Next.js ia a framework created by Vercel.
 **Run**
 
 `npm run dev`
+
+**Build**
+
+`yarn run build`
 
 ### FrontEnd
 - HTML
