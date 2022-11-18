@@ -23,7 +23,7 @@ export default function Contact() {
     }
     return(
         <section id='contact' className={styles.contact}>
-            <main>
+            <div>
                 <div className={styles.row}>
                     <div className={styles.col}>
                         <h1>Contact</h1>
@@ -64,7 +64,7 @@ export default function Contact() {
                         <Image src={twitter} alt="twitter"/>
                     </div>
                 </div>
-            </main>
+            </div>
         </section>
     )
 }

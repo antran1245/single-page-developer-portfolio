@@ -27,7 +27,7 @@
     filter: invert(35%) sepia(57%) saturate(461%) hue-rotate(89deg) brightness(92%) contrast(90%);
 }
 /* About me and profile pic */
-.aboutMe {
+.about {
     position: relative;
     display: flex;
     justify-content: center;
@@ -91,11 +91,11 @@
     .heading {
         padding-left: 5%;
     }
-    .aboutMe {
+    .about {
         width: 100%;
         position: relative;
     }
-    .aboutMe .text {
+    .about .text {
         padding-left: 5%;
         display: flex;
         flex-direction: column;
@@ -140,10 +140,10 @@
         width: 154px;
         margin: 0 10px;
     }
-    .aboutMe {
+    .about {
         flex-direction: column-reverse;
     }
-    .aboutMe .text {
+    .about .text {
         width: 100%;
         padding-left: 0%;
     }

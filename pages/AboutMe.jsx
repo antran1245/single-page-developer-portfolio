@@ -24,7 +24,7 @@ export default function AboutMe() {
                     <Image src={twitter} alt="twitter"/>
                 </div>
             </div>
-            <main className={styles.aboutMe}>
+            <div className={styles.about}>
                 <div className={styles.text}>
                     <h2>Nice to meet you! I&#39;m <span>Adam Keyes</span>.</h2>
                     <p>Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
@@ -34,7 +34,7 @@ export default function AboutMe() {
                     </div>
                 </div>
                 <div className={styles.profile}></div>
-            </main>
+            </div>
         </section>
     )
 }
